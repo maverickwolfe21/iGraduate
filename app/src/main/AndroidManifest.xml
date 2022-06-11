@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.iGraduate">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.C196PA">
+        <activity
+            android:name=".UI.ManageInstructorWithDeleteView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Main.InstructorsScreen"
+            android:exported="false" />
+        <activity
+            android:name=".UI.DetailedCourseNoDeleteView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ManageAssessmentNoDeleteView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.EditAssessmentsView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ManageInstructorView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.EditInstructorsView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.AddInstructorView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.AddCourseView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.EditCoursesView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.AddTermView"
+            android:exported="false" />
+
+        <receiver
+            android:name=".UI.MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".UI.ManageAssessmentView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.AddAssessmentView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.CreateTermView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Main.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.DetailedTermView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.DetailedCourseView"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Main.AssessmentsScreen"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Main.CoursesScreen"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Main.TermsScreen"
+            android:exported="false" />
+    </application>
+
+</manifest>

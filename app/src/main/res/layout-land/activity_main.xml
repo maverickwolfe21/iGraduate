@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iGraduate.UI.Main.AssessmentsScreen$MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="272dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="180dp"
+        android:text="Click to to add, view, or delete data."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="287dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/logo_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:translationY="170dp">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="160dp"
+            android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:onClick="viewCourses"
+            android:text="View Courses"
+            app:layout_constraintHorizontal_bias="0.31"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="160dp"
+            android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:onClick="viewAssessments"
+            android:text="View Assessments"
+            app:layout_constraintHorizontal_bias="0.63"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="160dp"
+            android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:onClick="viewTerms"
+            android:text="View Terms"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="160dp"
+            android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:onClick="viewInstructors"
+            android:text="View Instructors"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

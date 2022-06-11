@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sartainstudios.contacts.ContactsView">
+
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="Delete"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_cancel"
+        android:icon="@drawable/ic_outline_cancel_24"
+        android:title="Cancel"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_baseline_check_24"
+        android:title="Save"
+        app:showAsAction="always" />
+
+
+</menu>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    tools:context=".UI.ManageAssessmentView">
+
+    <LinearLayout
+        android:id="@+id/managedLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/managePerformance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Performance"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="136dp" />
+
+            <Switch
+                android:id="@+id/manageAssessmentTypeSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="handleTypeSwitch"
+                app:layout_constraintLeft_toLeftOf="@+id/managePerformance"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/manageObjective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Objective"
+                app:layout_constraintLeft_toLeftOf="@+id/manageTypeSwitch"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="136dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/manageAssessmentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title:"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="136dp" />
+
+            <EditText
+                android:id="@+id/manageAssessmentTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ABM2 — ABM2 TASK 1: MOBILE APPLICATION DEVELOPMENT"
+                android:inputType="text"
+                app:layout_constraintLeft_toRightOf="@+id/manageAssessmentTitle"
+                app:layout_constraintTop_toTopOf="@+id/manageAssessmentTitle"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="120dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/manageAssessmentStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:text="Start Date:"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="70dp" />
+
+            <EditText
+                android:id="@+id/manageAssessmentStartDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="04/20/22"
+                app:layout_constraintLeft_toRightOf="@+id/manageAssessmentStartDate"
+                app:layout_constraintTop_toTopOf="@+id/manageAssessmentStartDate"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="54dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/manageAssessmentEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:text="End Date:"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="70dp" />
+
+            <EditText
+                android:id="@+id/manageAssessmentEndDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="04/20/22"
+                app:layout_constraintLeft_toRightOf="@+id/manageAssessmentEndDate"
+                app:layout_constraintTop_toTopOf="@+id/manageAssessmentEndDate"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="54dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/manageAssessmentStartReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Start Reminder:"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="203dp" />
+
+            <CheckBox
+                android:id="@+id/manageAssessmentStartReminderCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="handleStartReminder"
+                app:layout_constraintLeft_toRightOf="@+id/manageAssessmentStartReminder"
+                app:layout_constraintTop_toTopOf="@+id/manageAssessmentStartReminder"
+                tools:layout_editor_absoluteX="89dp"
+                tools:layout_editor_absoluteY="191dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/manageAssessmentEndReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set End Reminder:"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="203dp" />
+
+            <CheckBox
+                android:id="@+id/manageAssessmentEndReminderCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="handleEndReminder"
+                app:layout_constraintLeft_toRightOf="@+id/manageAssessmentEndReminder"
+                app:layout_constraintTop_toTopOf="@+id/manageAssessmentEndReminder"
+                tools:layout_editor_absoluteX="89dp"
+                tools:layout_editor_absoluteY="191dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
