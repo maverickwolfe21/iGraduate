@@ -1,6 +1,6 @@
 # iGraduate
 
-iGraduate is a college scheduler for Android devices.
+iGraduate is a college scheduler application for Android devices.
 
 1 - View and manage your terms, courses, assessments, instructors.
 
